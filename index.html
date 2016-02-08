@@ -26,7 +26,7 @@
 	</div>
 </div>
 <!-- carousel -->
-<div class="row hidden-xs hidden-sm" ng-show="showGallery">
+<div class="row hidden-xs hidden-sm" >
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -38,7 +38,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item" ng-class="{active:!$index}" ng-repeat="photo in gallery">
-      <img src="http://placehold.it/1000x263" alt="...">
+      <img ng-src="{{photo.image}}" alt="...">
     </div>
     
   </div>

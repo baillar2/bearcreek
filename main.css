@@ -3,3 +3,24 @@
 	font-family:Arial;
 	font-size: 20px;
 }
+
+.admin-background {
+	background-image: url(images/background.jpeg);
+	background-size: cover;
+	background-color: lightGrey;
+}
+
+.admin-pad {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.img-margin {
+	margin:5px;
+}
+.admin-border {
+	border:thin solid lightGrey;
+	border-radius: 5px;
+}
+.admin-input {
+	border-radius: 5px;
+}
