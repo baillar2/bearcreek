@@ -2,7 +2,9 @@ angular.module('moduleOne',[])
 
 angular.module('moduleOne')
 	.controller('controllerOne', ['$scope', 'content', function($scope, content){
-		
+	   	$scope.gallery = content.gallery
+		$scope.blogs = content.blogs
+		$scope.testimonials = content.testimonials
 
 
 	}])
@@ -48,10 +50,10 @@ angular.module('moduleOne')
 
 angular.module('moduleOne')
 	.factory('content', [ function(){
-		var gallery = [{image:'http://placehold.it/1000x263'}, 
-		{image:'http://placehold.it/1000x265'}, 
-		{image:'http://placehold.it/1000x268'},
-		{image:'http://placehold.it/1000x270'}]
+		var gallery = [{image:"images/stock-1.jpg"}, 
+		{image:"images/stock-2.jpg"}, 
+		{image:"images/stock-3.jpg"},
+		{image:"images/stock-4.jpg"}]
 		var blogs = []
 		var testimonials = []
 		return {
