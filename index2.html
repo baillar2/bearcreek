@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html ng-app="moduleOne">
+<head>
+	<title>Evergreen Snow Removal and Landscape : Bear Creek Landscaping Co. </title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css"> 
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+	<link rel="stylesheet" type="text/css" href="main2.css">
+	<script type="text/javascript" src="main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body ng-controller="controllerOne">
+<div>
+	<img class="background" src="images/largebackground.jpeg">
+	<nav class="navbar navbar-default navbar-static-top container">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Bear Creek Landscaping Co.</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active" ng-click="aboutLink()"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+	        <li ng-click="servicesLink()"><a href="#">Services</a></li>
+	        <li ng-click="blogLink()"><a href="#">Blog</a></li>
+	        <li ng-click="contactLink()"><a href="#">Contact</a></li>
+	        <li ng-click="galleryLink()"><a href="#">Gallery</a></li>
+	      </ul>
+	      <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn btn-default">Submit</button>
+	      </form>      
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="container fontColor">
+		<!-- Carousel -->
+ <div class="row hidden-sm" >
+	<div id="carousel-example-generic" class="carousel slide control-height" data-ride="carousel">
+	  <!-- Wrapper for slides -->
+	  	<div class="carousel-inner">
+		    <div class="item" ng-class="{active:!$index}" ng-repeat="photo in gallery">
+		      <img class="img-responsive center-block" ng-src="{{photo.image}}" alt="..." >
+		    </div>	  
+	 	</div>
+	 
+	  <!-- Controls -->
+	    <a class="left carousel-control control-height" href="#carousel-example-generic" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a class="right carousel-control control-height" href="#carousel-example-generic" role="button" data-slide="next">
+		 <span class="glyphicon glyphicon-chevron-right"></span>
+		 </a>
+	</div> 
+	<!-- Carousel End -->
+		<div class="row row-padding">
+			<div class="center col-xs-4">
+				<img class="smImage" src="images/snow.jpg">
+				<h3><a class="fontColor" href="#">Blog</a></h3>
+			</div>
+			<div class="center col-xs-4">
+				<img class="smImage " src="images/irrigation.jpg">
+				<h3><a class="fontColor" href="#">Services</a></h3>
+
+			</div>
+			<div class="center col-xs-4">
+				<img class="smImage " src="images/landscape.jpg">
+				<h3><a class="fontColor" href="#">Contact Us</a></h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">		
+		<div style="position:relative">
+			<img class="miniBack" src="">
+			<div class="col-xs-4 col-xs-offset-4 col-md-6 col-md-offset-3 content-box" ng-show="aboutLink">
+				<h3>About Us</h3>
+				<p>Bear Creek Landscape Company, founded in 1980, has been serving Evergreen Colorado and surrounding areas for over 30 years.</p>
+
+				<p>With Bear Creek Landscape Company, our clients benefit from the combined experience of new owner Justin Noska and founders John Magdalenski and Liz Besant. Our company has grown into a full service, year-round landscape and maintenance business. It is important to our culture that each customer gets to know our owner and staff on a first-name basis. This allows our customers to reach out to the owner directly whenever there is a question, comment or concern.</p>
+
+				<strong>&quot;Small Enough to be Personal, Big Enough to Get the Job Done&rdquo;-</strong>
+				<p>Our motto is rings true as our steady growth has come from &lsquo;word-of-mouth&rsquo; advertising from our hundreds of satisfied customers. We are dedicated to keeping things personal, simple and efficient.</p>
+			
+				<strong>-Justin Noska</strong>
+			
+			</div>
+			<div class="col-xs-4 col-xs-offset-4 col-md-6 col-md-offset-3 content-box" ng-show="blogLink">
+				<h3>Blog</h3>
+				<p></p>
+			</div>
+			<div class="col-xs-4 col-xs-offset-4 col-md-6 col-md-offset-3 content-box" ng-show="servicesLink">
+				<h3>Services</h3>
+				<div class="serviceList">
+					<ul style="display:inline-block">
+						<li>Landscape Design</li>
+						<li>Retaining Walls</li>
+						<li>Walks</li>
+						<li>Patios</li>
+						<li>Planting</li>
+						<li>Planting</li>
+					</ul>
+					<ul style="display:inline-block">
+						<li>Snow Removal</li>
+						<li>Grading and Sod</li>
+						<li>Irrigation</li>
+						<li>Boulder/Rock Work</li>
+						<li>Stamped Concrete</li>
+						<li>Low Voltage Lighting</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xs-4 col-xs-offset-4 col-md-6 col-md-offset-3 content-box" ng-show="contactLink">
+				<h3>Contact Us</h3> 
+				<form class="submit">
+					<div class="block">
+						<label class="labels">Name</label>
+						<input class="forms" type="text" ng-model="customer.name" placeholder="Frist and last name">
+					</div>	
+					<div class="block">
+						<label class="labels">Phone#</label>
+						<input class="forms" type="tel" ng-model="customer.number" placeholder="xxx-xxx-xxxx">
+					</div>	
+					<div class="block">	
+						<label class="labels">Email</label>
+						<input class="forms" type="email" ng-model="customer.email" placeholder="email@domain.com">
+					</div>
+					<div class="block">
+						<label class="block">What can we help you with?</label>
+						<textarea ng-model="customer.body" cols="30" rows="5" placeholder="Questions or Comments"></textarea>
+					</div>	
+						<button class="btn btn-info" ng-click="custSubmit()">Get in Touch</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

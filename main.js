@@ -1,32 +1,31 @@
 angular.module('moduleOne',[])
 
 angular.module('moduleOne')
-	.controller('navController', ['$scope', function($scope){
-			$scope.aboutUs = true
+	.controller('navController', ['$scope','$parent',function($scope, $parent){
+			
 		$scope.aboutLink = function(){
-			$scope.aboutUs = true
-			$scope.services = false
-			$scope.blog = false
-			$scope.contactUs = false
+			$parent.$scope.aboutUs = true
+			$parent.$scope.services = false
+			$parent.$scope.blog = false
+			$parent.$scope.contactUs = false
 		}
-		$scope.servicesLink = function(){
-			$scope.aboutUs = false
-			$scope.services = true
-			$scope.blog = false
-			$scope.contactUs = false
-			console.log('click fired')	
+		$scope.servicesLink = function(){	
+			$parent.$scope.aboutUs = false
+			$parent.$scope.services = true
+			$parent.$scope.blog = false
+			$parent.$scope.contactUs = false	
 		}
 		$scope.blogLink = function(){
-			$scope.aboutUs = false
-			$scope.services = false
-			$scope.blog = true
-			$scope.contactUs = false	
-		}
+			$parent.$scope.aboutUs = false
+			$parent.$scope.services = false
+			$parent.$scope.blog = true
+			$parent.$scope.contactUs = false
+		}	
 		$scope.contactLink = function(){
-			$scope.aboutUs = false
-			$scope.services = false
-			$scope.blog = false
-			$scope.contactUs = true	
+			$parent.$scope.aboutUs = false
+			$parent.$scope.services = false
+			$parent.$scope.blog = false
+			$parent.$scope.contactUs = true	
 		}
 	}])
 angular.module('moduleOne')
@@ -35,6 +34,9 @@ angular.module('moduleOne')
 		$scope.blogs = content.blogs
 		$scope.testimonials = content.testimonials
 		$scope.aboutUs = true
+		$scope.services = false
+		$scope.blog = false
+		$scope.contactUs = false
 
 	}])
 angular.module('moduleOne')
@@ -43,6 +45,7 @@ angular.module('moduleOne')
 		$scope.gallery = content.gallery
 		$scope.blogs = content.blogs
 		$scope.testimonials = content.testimonials	
+		
 
 		var BlogPost = function(date, headline, body) {
 			this.date = date,
@@ -91,4 +94,3 @@ angular.module('moduleOne')
 			testimonials: testimonials
 		}
 	}])		
-

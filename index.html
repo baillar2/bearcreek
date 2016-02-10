@@ -11,42 +11,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body ng-controller='controllerOne'>
-	<!--<div class="container">
-	<div class="row" style="height:75px">
-		<div class="col-xs-6 vcenter">
-			<img class="img-responsive" src="images/plant.png" style="display:inline-block">
-			<img class="img-responsive" src="images/logo.png" style="display:inline-block">
-		</div>
-		<div class="col-xs-6 visible-xs">
-			<a class="btn btn-info btn-large" href="tel:303-674-1094"><span class="glyiphicon glyphicon-earphone"></span> Call Us</a>
-		</div>
-		<div class="col-sm-6 hidden-xs numbers">
-			
-		
-		</div>
-	</div> 
-</div> -->
-<div ng-controller="navController" class="row navbarLg">
-	<div class="navLinks inline-block">
-		<a href="#" ng-click="aboutLink()" class="inline-block links">Home</a>
-		<a href="#" ng-click="servicesLink()" class="inline-block links">Services</a>
-		<a href="#" ng-click="blogLink()" class="inline-block links">Blog</a>
-		<a href="#" ng-click="contactLink()" class="inline-block links">Contact Us</a>
-	</div>	
-</div>
+	
+
+	
+
+
 <div class="container">
+	<div class="row header">
+	
+	</div>
 <!-- carousel -->
-<div class="row hidden-xs" >
+<!-- <div class="row hidden-xs" >
 	<div id="carousel-example-generic" class="carousel slide control-height" data-ride="carousel">
-	  <!-- Indicators -->
-	  <!-- <ol class="carousel-indicators">
-	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-	    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-	    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-	  </ol> -->
-	 
 	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner">
+	  <!--<div class="carousel-inner">
 	    <div class="item" ng-class="{active:!$index}" ng-repeat="photo in gallery">
 	      <img class="img-responsive center-block" ng-src="{{photo.image}}" alt="..." >
 	    </div>
@@ -54,16 +32,17 @@
 	  </div>
 	 
 	  <!-- Controls -->
-	  <a class="left carousel-control control-height" href="#carousel-example-generic" role="button" data-slide="prev">
+	  <!--<a class="left carousel-control control-height" href="#carousel-example-generic" role="button" data-slide="prev">
 	    <span class="glyphicon glyphicon-chevron-left"></span>
 	  </a>
 	  <a class="right carousel-control control-height" href="#carousel-example-generic" role="button" data-slide="next">
 	    <span class="glyphicon glyphicon-chevron-right"></span>
 	  </a>
 	</div> <!-- Carousel -->
-</div>
+
+
 <div class="row row-pad">
-	<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 content-box aboutUs" ng-show="aboutUs">
+	<div class=" col-xs-6 col-xs-offset-3 content-box aboutUs" >
 		<h3>About Us</h3>
 		<p>Bear Creek Landscape Company, founded in 1980, has been serving Evergreen Colorado and surrounding areas for over 30 years.</p>
 
@@ -74,7 +53,7 @@
 		
 			<strong>-Justin Noska</strong>
 	</div>
-	<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 content-box services" ng-show="services">
+	<div class=" col-xs-6 col-xs-offset-3 content-box services" >
 		<h3>Services</h3>
 		<div class="serviceList">
 		<ul style="display:inline-block">
@@ -95,11 +74,11 @@
 		</ul>
 		</div>
 	</div>	
-	<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 content-box blog" ng-show="blog">
+	<div class=" col-xs-6 col-xs-offset-3 content-box blog" >
 		<h3>Blog</h3>
 		<p></p>
 	</div>
-	<div class="col-xs-8 col-xs-offset-2 col-md-6 col-md-offset-3 content-box contactUs" ng-show="contactUs">
+	<div class=" col-xs-6 col-xs-offset-3 content-box contactUs" >
 		<h3>Contact Us</h3> 
 		<form class="submit">
 			<div class="block">

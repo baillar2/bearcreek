@@ -1,0 +1,46 @@
+.background {
+	position: fixed;
+	margin-top: 50px;
+	opacity: 0.4;	
+	width: 100%;
+	height: auto;
+}
+.fontColor {
+	color: #54321C;
+}
+.smImage {
+	height: 125px;
+	width: 150px;
+	border-radius: 50px;
+}
+.row-padding {
+	padding:20px 0 20px 0;
+}
+.center {
+	text-align: center;
+}
+.serviceList {
+	margin:auto;	
+	font-size: 16px;
+}
+.labels {
+	width: 60px;
+	margin-right: 3px;
+}
+.forms {
+	border: thin solid grey;
+    border-radius: 5px;
+    min-width: 250px;
+    margin: 5px 0;
+    /*box-shadow: 5px 5px 1px grey;*/
+}
+.content-box {
+	border:thin solid #54321C;
+	border-radius: 5px;
+	min-height: 400px;
+	min-width: 250px;
+	max-width: 500px;
+	font-family: Arial;
+	margin-bottom: 30px;
+	padding:10px;
+}
