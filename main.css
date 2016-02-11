@@ -1,49 +1,46 @@
-body {
-	/*background-image: url('images/largebackground.jpeg');*/
-	background-repeat: no-repeat;
-	background-size: cover;
-	opacity: ;
+/* BACKGROUND IMAGE */
+.background {
+	position: fixed;
+	margin-top:50px;
+	opacity: 0.4;	
+	width: 100%;
+	height: 100%;
 }
-.numbers {
-	color:#744b41;
-	font-family:Arial;
-	font-size: 18px;
-	padding-top: 118px;
-}
-/*.header {
-	display: relative;
-	background-image: url('images/header.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	width:100%;
-	height:400px;
-	margin:30px auto 0 auto;
+/* MAIN PAGE */
 
-}*/
-.logo {
-	border-radius: 25px;
-	position: absolute;
-	opacity: 0.6;
+.callBtn {
+	background-color: #54321C;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    color: white;
+}
+.callBox {
+	padding-top:7%;
+}
 
+.fontColor {
+	color: #54321C;
 }
-.content-box {
-	border:thin solid black;
-	border-radius: 5px;
-	min-height: 400px;
-	min-width: 250px;
-	max-width: 500px;
-	font-family: Arial;
-	margin-bottom: 30px;
-	padding:10px;
+.miniBtn {
+	border: medium solid #54321c;
+    width: 150px;
+    border-radius: 30px;
+    height: 50px;
+    margin:30% 0;
+    font-size: 20px;
+    text-align: center;
+	padding-top: 5%;
 }
-.row-pad {
-	padding-top: 20px;
+.row-padding {
+	padding:20px 0 20px 0;
 }
-.block {
-	display: block;
+.center {
+	text-align: center;
 }
-.inline-block {
-	display: inline-block;
+.serviceList {
+	margin-top: 10%;	
+	font-size: 16px;
 }
 .labels {
 	width: 60px;
@@ -56,29 +53,33 @@ body {
     margin: 5px 0;
     /*box-shadow: 5px 5px 1px grey;*/
 }
-.aboutUs {
-	/*background-image: url('images/about.jpg');
-	background-size: cover; 
-}*/
-/*.services {
-	background-image: url('images/background-grass.jpg');
-}*/
-.serviceList {
-	margin-left: 12%;
-	margin-top: 25px;
+.blog-modal {
+	text-align: center;
+	padding:10px 0;
 }
-.contactUs {
-	/*background-image: url('images/rock-background.jpg');
-	color: white;
-	font-weight: bolder;
-	font-size: 18px;
-}*/
-.blog {
-	/*background-image: url('images/flagstone.jpg');
-}*/
+.content-box {
+	/*border:thin solid #54321C;*/
+	border-radius: 5px;
+	min-height: 400px;
+	min-width: 250px;
+	max-width: 500px;
+	font-family: Arial;
+	margin-bottom: 30px;
+	padding:10px;
+	opacity:1;
+	transition-propery:opacity;
+}
+.block {
+	display: block;
+}
+.ng-hide-add {
+	opacity: 0;
+}
+.ng-hide-remove {
+	opacity: 1;
+}
 
-
-
+/* ADMIN CSS STYLING */
 .admin-background {
 	background-image: url(images/background.jpeg);
 	background-size: cover;
@@ -89,6 +90,7 @@ body {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+
 .img-margin {
 	margin:5px;
 }
@@ -98,10 +100,9 @@ body {
 }
 .admin-input {
 	border-radius: 5px;
+	margin-top: 8px;
 }
-.height {
-	min-height: 240px;
-}
+
 .control-height {
 	height: 400px;
 }
