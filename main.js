@@ -70,8 +70,10 @@ angular.module('moduleOne')
 			$scope.gallery.splice(index, 1)
 		}
 		$scope.submitBlog = function(){
-			var blog = new BlogPost(entry.date, entry.headline, entry.body)
+			var blog = new BlogPost($scope.entry.date, $scope.entry.headline, $scope.entry.body)
 			$scope.blogs.push(blog)
+			console.log($scope.blogs)
+			$scope.entry = {}
 		}
 		$scope.submitTestimony = function(){
 			var rev = new Review(review.name, review.date)
