@@ -68,6 +68,8 @@ angular.module('moduleOne')
 		$scope.removePic = function(photo){
 			var index = $scope.gallery.indexOf(photo)
 			$scope.gallery.splice(index, 1)
+			$('#gmodalCarousel').carousel('next')
+			$('#mainCarousel').carousel('next')
 		}
 		$scope.submitBlog = function(){
 			var blog = new BlogPost($scope.entry.date, $scope.entry.headline, $scope.entry.body)

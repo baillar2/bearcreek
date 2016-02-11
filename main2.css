@@ -1,7 +1,7 @@
 /* BACKGROUND IMAGE */
 .background {
 	position: fixed;
-	margin-top: 50px;
+	margin-top:50px;
 	opacity: 0.4;	
 	width: 100%;
 	height: 100%;
@@ -12,33 +12,25 @@
 	background-color: #54321C;
     font-size: 20px;
     padding: 5px 20px;
-    border-radius: 15px
+    border-radius: 15px;
+    color: white;
 }
 .callBox {
 	padding-top:7%;
 }
-.white {
-	background-color: white;
-}
+
 .fontColor {
 	color: #54321C;
 }
-.miniService {
-	background-image: url('images/irrigation.jpg');
-}
-.miniContact {
-	background-image: url('images/landscape.jpg');
-}
-.miniBlog {
-	background-image: url('images/snow.jpg');
-}
-.mini {
-	text-align: center;
-    padding-top: 17%;
-    height: 125px;
+.miniBtn {
+	border: medium solid #54321c;
     width: 150px;
-    border-radius: 50px;
-    margin: 5%;
+    border-radius: 30px;
+    height: 50px;
+    margin:30% 0;
+    font-size: 20px;
+    text-align: center;
+	padding-top: 5%;
 }
 .row-padding {
 	padding:20px 0 20px 0;
@@ -47,7 +39,7 @@
 	text-align: center;
 }
 .serviceList {
-	margin-top: 15%;	
+	margin-top: 10%;	
 	font-size: 16px;
 }
 .labels {
@@ -61,6 +53,10 @@
     margin: 5px 0;
     /*box-shadow: 5px 5px 1px grey;*/
 }
+.blog-modal {
+	text-align: center;
+	padding:10px 0;
+}
 .content-box {
 	/*border:thin solid #54321C;*/
 	border-radius: 5px;
@@ -73,11 +69,6 @@
 	opacity:1;
 	transition-propery:opacity;
 }
-.miniLinks {
-	color: white;
-	text-shadow:2px 2px 0 black;
-
-}
 .block {
 	display: block;
 }
@@ -86,12 +77,6 @@
 }
 .ng-hide-remove {
 	opacity: 1;
-}
-/* BLOG MODAL */
-.blogBackground {
-	opacity: 0.4;	
-	width: 100%;
-	height: 100%;
 }
 
 /* ADMIN CSS STYLING */
