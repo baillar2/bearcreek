@@ -1,31 +1,31 @@
-angular.module('moduleOne',[])
+angular.module('moduleOne',['ngAnimate'])
 
 angular.module('moduleOne')
-	.controller('navController', ['$scope','$parent',function($scope, $parent){
+	.controller('navController', ['$scope',function($scope){
 			
 		$scope.aboutLink = function(){
-			$parent.$scope.aboutUs = true
-			$parent.$scope.services = false
-			$parent.$scope.blog = false
-			$parent.$scope.contactUs = false
+			$scope.$parent.aboutUs = true
+			$scope.$parent.services = false
+			$scope.$parent.blog = false
+			$scope.$parent.contactUs = false
 		}
 		$scope.servicesLink = function(){	
-			$parent.$scope.aboutUs = false
-			$parent.$scope.services = true
-			$parent.$scope.blog = false
-			$parent.$scope.contactUs = false	
+			$scope.$parent.aboutUs = false
+			$scope.$parent.services = true
+			$scope.$parent.blog = false
+			$scope.$parent.contactUs = false	
 		}
 		$scope.blogLink = function(){
-			$parent.$scope.aboutUs = false
-			$parent.$scope.services = false
-			$parent.$scope.blog = true
-			$parent.$scope.contactUs = false
+			$scope.$parent.aboutUs = false
+			$scope.$parent.services = false
+			$scope.$parent.blog = true
+			$scope.$parent.contactUs = false
 		}	
 		$scope.contactLink = function(){
-			$parent.$scope.aboutUs = false
-			$parent.$scope.services = false
-			$parent.$scope.blog = false
-			$parent.$scope.contactUs = true	
+			$scope.$parent.aboutUs = false
+			$scope.$parent.services = false
+			$scope.$parent.blog = false
+			$scope.$parent.contactUs = true	
 		}
 	}])
 angular.module('moduleOne')

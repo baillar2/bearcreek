@@ -1,17 +1,31 @@
+/* BACKGROUND IMAGE */
 .background {
 	position: fixed;
 	margin-top: 50px;
 	opacity: 0.4;	
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
+/* MAIN PAGE */
 .fontColor {
 	color: #54321C;
 }
-.smImage {
-	height: 125px;
-	width: 150px;
-	border-radius: 50px;
+.miniService {
+	background-image: url('images/irrigation.jpg');
+}
+.miniContact {
+	background-image: url('images/landscape.jpg');
+}
+.miniBlog {
+	background-image: url('images/snow.jpg');
+}
+.mini {
+	text-align: center;
+    padding-top: 17%;
+    height: 125px;
+    width: 150px;
+    border-radius: 50px;
+    margin: 5%;
 }
 .row-padding {
 	padding:20px 0 20px 0;
@@ -20,7 +34,7 @@
 	text-align: center;
 }
 .serviceList {
-	margin:auto;	
+	margin-top: 15%;	
 	font-size: 16px;
 }
 .labels {
@@ -35,7 +49,7 @@
     /*box-shadow: 5px 5px 1px grey;*/
 }
 .content-box {
-	border:thin solid #54321C;
+	/*border:thin solid #54321C;*/
 	border-radius: 5px;
 	min-height: 400px;
 	min-width: 250px;
@@ -43,4 +57,44 @@
 	font-family: Arial;
 	margin-bottom: 30px;
 	padding:10px;
+	opacity:1;
+	transition-propery:opacity;
+}
+.block {
+	display: block;
+}
+.ng-hide-add {
+	opacity: 0;
+}
+.ng-hide-remove {
+	opacity: 1;
+}
+
+
+/* ADMIN CSS STYLING */
+.admin-background {
+	background-image: url(images/background.jpeg);
+	background-size: cover;
+	background-color: lightGrey;
+}
+
+.admin-pad {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.img-margin {
+	margin:5px;
+}
+.admin-border {
+	border:thin solid lightGrey;
+	border-radius: 5px;
+}
+.admin-input {
+	border-radius: 5px;
+}
+.height {
+	min-height: 240px;
+}
+.control-height {
+	height: 400px;
 }
