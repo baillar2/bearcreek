@@ -1,42 +1,15 @@
-angular.module('moduleOne',['ngAnimate'])
 
 angular.module('moduleOne')
-	.controller('navController', ['$scope',function($scope){
-			
-		$scope.aboutLink = function(){
-			$scope.$parent.aboutUs = true
-			$scope.$parent.services = false
-			$scope.$parent.blog = false
-			$scope.$parent.contactUs = false
-		}
-		$scope.servicesLink = function(){	
-			$scope.$parent.aboutUs = false
-			$scope.$parent.services = true
-			$scope.$parent.blog = false
-			$scope.$parent.contactUs = false	
-		}
-		$scope.blogLink = function(){
-			$scope.$parent.aboutUs = false
-			$scope.$parent.services = false
-			$scope.$parent.blog = true
-			$scope.$parent.contactUs = false
+	.controller('navController', ['$scope', '$http', function($scope, $http){
+		$scope.adminLogin = function(){
+			$http.get('/admin')
 		}	
-		$scope.contactLink = function(){
-			$scope.$parent.aboutUs = false
-			$scope.$parent.services = false
-			$scope.$parent.blog = false
-			$scope.$parent.contactUs = true	
-		}
 	}])
 angular.module('moduleOne')
 	.controller('controllerOne', ['$scope', 'content', function($scope, content){
 	   	$scope.gallery = content.gallery
 		$scope.blogs = content.blogs
 		$scope.testimonials = content.testimonials
-		$scope.aboutUs = true
-		$scope.services = false
-		$scope.blog = false
-		$scope.contactUs = false
 
 	}])
 angular.module('moduleOne')
