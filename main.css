@@ -17,6 +17,7 @@
 }
 .callBox {
 	padding-top:7%;
+	min-width: 132px;
 }
 
 .fontColor {
@@ -24,6 +25,7 @@
 }
 .miniBtn {
 	border: medium solid #54321c;
+    box-shadow: 3px 3px 5px black;
     width: 150px;
     border-radius: 30px;
     height: 50px;
